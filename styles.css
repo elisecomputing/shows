@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+}
+
+.shows {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.shows img {
+    width: 150px;  /* Fixed width to keep the images manageable */
+    height: 200px;  /* Fixed height for a uniform look */
+    object-fit: contain;  /* Ensure the whole image is visible */
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transition: transform 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.shows img:hover {
+    transform: scale(1.1);  /* Slight enlargement on hover */
+    border: 2px solid rgba(255, 255, 255, 1);  /* White border on hover */
+}
